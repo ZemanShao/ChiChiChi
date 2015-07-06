@@ -8,8 +8,9 @@
 header("Content-Type:text/json; charset=utf8");
 include_once('ShopDao.php');
 
-$shopDap = ShopDao::sharedShopDao();
-$result = $shopDap->getAllShops();
+$shopDao = ShopDao::sharedShopDao();
+$result = $shopDao->getAllShops();
 $shops = ShopBean::arrayToJson($result,false);
 
 echo '{"shops:'.$shops.'"}';
+?>

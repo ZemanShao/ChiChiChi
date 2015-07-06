@@ -108,3 +108,4 @@ class ShopBean {
         return $result;
     }
 }
+?>

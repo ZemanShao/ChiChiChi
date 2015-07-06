@@ -17,3 +17,4 @@ $shop = $result->toJson();
 
 
 echo '{"shops:'.$shop.'"}';
+?>
