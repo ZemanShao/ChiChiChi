@@ -7,7 +7,7 @@
  */
 
 header("Content-Type:text/json; charset=utf8");
-include_once('ShopDao.php');
+include_once('shopdao.php');
 
 $shopId = $_GET['shopId'];
 
@@ -16,5 +16,5 @@ $result = $shopDao->getShop($shopId);
 $shop = $result->toJson();
 
 
-echo '{"shops:'.$shop.'"}';
+echo ''.$shop.'';
 ?>

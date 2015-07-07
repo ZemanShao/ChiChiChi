@@ -3,14 +3,15 @@
  * Created by PhpStorm.
  * User: nathan
  * Date: 7/6/15
- * Time: 2:31 PM
+ * Time: 4:20 PM
  */
+
 header("Content-Type:text/json; charset=utf8");
-include_once('ShopDao.php');
+include_once('shopdao.php');
 
 $shopDao = ShopDao::sharedShopDao();
 $result = $shopDao->getAllShops();
-$shops = ShopBean::arrayToJson($result,false);
+$shops = ShopBean::arrayToJson($result,true);
 
-echo '{"shops:'.$shops.'"}';
+echo '{"shops":'.$shops.'}';
 ?>
