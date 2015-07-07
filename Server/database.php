@@ -4,9 +4,9 @@ class Database {
 
 	private static $_sharedDatabase = null;
 
-	private $hostName = "localhost";
+	private $hostName = "127.0.0.1";
 	private $account = "root";
-	private $password = "Rr23oahCNW";
+	private $password = "password";
 	private $databaseName = "ChiChiChi";
 	private $con = null;
 	private $isConnect = false;

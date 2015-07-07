@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7366D0E3-E29B-49D9-B200-43CA34D1463C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2DEF77533D1A31DD24377F7CD6FCA5BFFFBE627C</key>
+		<string>https://github.com/Nathan1994/ChiChiChi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Client/chichichi/chichichi.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2DEF77533D1A31DD24377F7CD6FCA5BFFFBE627C</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Nathan1994/ChiChiChi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2DEF77533D1A31DD24377F7CD6FCA5BFFFBE627C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2DEF77533D1A31DD24377F7CD6FCA5BFFFBE627C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ChiChiChi</string>
+		</dict>
+	</array>
+</dict>
+</plist>
