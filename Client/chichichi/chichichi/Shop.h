@@ -6,8 +6,15 @@
 //  Copyright (c) 2015 TAC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Shop : NSObject
 
+@property NSUInteger shopId;
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, strong) NSString *tel;
+@property(nonatomic, strong) NSString *imageUrl;
+@property(nonatomic, strong) UIImage *image;
+
++(instancetype)shopWithDic:(NSDictionary *)dic;
 @end

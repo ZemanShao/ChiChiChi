@@ -1,3 +1,4 @@
+
 //
 //  ShopDetailTableViewController.m
 //  chichichi
@@ -7,94 +8,87 @@
 //
 
 #import "ShopDetailTableViewController.h"
+#import "AFNetworking.h"
+#import "ASMediaFocusManager.h"
 
-@interface ShopDetailTableViewController ()
-
+@interface ShopDetailTableViewController ()<ASMediasFocusDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *telLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) Shop *currentShop;
 @end
 
 @implementation ShopDetailTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self getShopDetail];
+    self.title = @"外卖详情";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark - Table View Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 2) {
+//        ASMediaFocusManager *mediaFocusManager = [[ASMediaFocusManager alloc] init];
+//        mediaFocusManager.delegate = self;
+//        [mediaFocusManager installOnView:self.imageView];
+    }
 }
 
-#pragma mark - Table view data source
+#pragma mark - ASMediaFocusDelegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (UIViewController *)parentViewControllerForMediaFocusManager:(ASMediaFocusManager *)mediaFocusManager
+{
+    return self.parentViewController;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+// Returns the URL where the media (image or video) is stored. The URL may be local (file://) or distant (http://).
+- (NSURL *)mediaFocusManager:(ASMediaFocusManager *)mediaFocusManager mediaURLForView:(UIView *)view
+{
+//    NSInteger index;
+//    NSString *name;
+//    NSURL *url;
+//    
+//    // Here, medias are accessed through their name stored in self.mediaNames
+//    index = [self.imageViews indexOfObject:view];
+//    name = self.mediaNames[index];
+//    url = [[NSBundle mainBundle] URLForResource:name withExtension:nil];
+
+    return [NSURL URLWithString:self.currentShop.imageUrl];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+// Returns the title for this media view. Return nil if you don't want any title to appear.
+- (NSString *)mediaFocusManager:(ASMediaFocusManager *)mediaFocusManager titleForView:(UIView *)view
+{
+    return @"My title";
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - Networking
+- (void)getShopDetail{
+    __weak ShopDetailTableViewController *weakSelf = self;
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"http://zeman.im/chichichi/getshop.php"
+      parameters:@{@"shopId" : [NSNumber numberWithUnsignedInteger:self.shopId]}
+         success:^(AFHTTPRequestOperation *operation, NSDictionary *response) {
+             weakSelf.currentShop = [Shop shopWithDic:response];
+             [weakSelf reloadTableViewData];
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+#pragma mark - Util
+
+- (void)reloadTableViewData{
+    __weak ShopDetailTableViewController *weakSelf = self;
+    weakSelf.nameLabel.text = weakSelf.currentShop.name;
+    weakSelf.telLabel.text= weakSelf.currentShop.tel;
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:weakSelf.currentShop.imageUrl]]];
+    weakSelf.currentShop.image = image;
+    self.imageView.image = image;
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

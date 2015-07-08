@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Shop.h"
 @interface ShopDetailTableViewController : UITableViewController
+
+@property NSUInteger shopId;
 
 @end

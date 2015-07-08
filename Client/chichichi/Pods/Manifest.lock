@@ -20,14 +20,20 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - ASBPlayerScrubbing (0.1)
+  - ASMediaFocusManager (0.5):
+    - ASBPlayerScrubbing (~> 0.1)
   - Qiniu (7.0.11.1):
     - AFNetworking (~> 2.0)
 
 DEPENDENCIES:
+  - ASMediaFocusManager
   - Qiniu (~> 7.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ASBPlayerScrubbing: 0fc5e76aad6fdbcf14380734fb7f2c127cd28b66
+  ASMediaFocusManager: 5a071038ada1a79abf9d0c95b6b2b1c1e5cd3a87
   Qiniu: 080a6728b969f6b0e77c9de574ede37e78b0912b
 
 COCOAPODS: 0.37.2

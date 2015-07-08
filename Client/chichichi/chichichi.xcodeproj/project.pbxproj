@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9CA7F013572CCB46F0DB3678 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E00870849C7B221E60AE8818 /* libPods.a */; };
+		D821F2EA1B4D99D600505594 /* ShopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D821F2E91B4D99D600505594 /* ShopTableViewController.m */; };
+		D821F2ED1B4D9A2800505594 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = D821F2EC1B4D9A2800505594 /* Shop.m */; };
+		D821F2F01B4DA42D00505594 /* ShopDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D821F2EF1B4DA42D00505594 /* ShopDetailTableViewController.m */; };
 		D85133B51B4BE58900E0AC7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85133B41B4BE58900E0AC7A /* main.m */; };
 		D85133B81B4BE58900E0AC7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85133B71B4BE58900E0AC7A /* AppDelegate.m */; };
 		D85133BB1B4BE58900E0AC7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85133BA1B4BE58900E0AC7A /* ViewController.m */; };
@@ -29,6 +32,12 @@
 
 /* Begin PBXFileReference section */
 		9A666EDC756FC31E789968DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D821F2E81B4D99D600505594 /* ShopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableViewController.h; sourceTree = "<group>"; };
+		D821F2E91B4D99D600505594 /* ShopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewController.m; sourceTree = "<group>"; };
+		D821F2EB1B4D9A2800505594 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		D821F2EC1B4D9A2800505594 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		D821F2EE1B4DA42D00505594 /* ShopDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailTableViewController.h; sourceTree = "<group>"; };
+		D821F2EF1B4DA42D00505594 /* ShopDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailTableViewController.m; sourceTree = "<group>"; };
 		D85133AF1B4BE58900E0AC7A /* chichichi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chichichi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85133B31B4BE58900E0AC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D85133B41B4BE58900E0AC7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +110,12 @@
 				D85133B71B4BE58900E0AC7A /* AppDelegate.m */,
 				D85133B91B4BE58900E0AC7A /* ViewController.h */,
 				D85133BA1B4BE58900E0AC7A /* ViewController.m */,
+				D821F2E81B4D99D600505594 /* ShopTableViewController.h */,
+				D821F2E91B4D99D600505594 /* ShopTableViewController.m */,
+				D821F2EE1B4DA42D00505594 /* ShopDetailTableViewController.h */,
+				D821F2EF1B4DA42D00505594 /* ShopDetailTableViewController.m */,
+				D821F2EB1B4D9A2800505594 /* Shop.h */,
+				D821F2EC1B4D9A2800505594 /* Shop.m */,
 				D85133BC1B4BE58900E0AC7A /* Main.storyboard */,
 				D85133BF1B4BE58900E0AC7A /* Images.xcassets */,
 				D85133C11B4BE58900E0AC7A /* LaunchScreen.xib */,
@@ -278,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D821F2F01B4DA42D00505594 /* ShopDetailTableViewController.m in Sources */,
+				D821F2ED1B4D9A2800505594 /* Shop.m in Sources */,
 				D85133BB1B4BE58900E0AC7A /* ViewController.m in Sources */,
+				D821F2EA1B4D99D600505594 /* ShopTableViewController.m in Sources */,
 				D85133B81B4BE58900E0AC7A /* AppDelegate.m in Sources */,
 				D85133B51B4BE58900E0AC7A /* main.m in Sources */,
 			);
