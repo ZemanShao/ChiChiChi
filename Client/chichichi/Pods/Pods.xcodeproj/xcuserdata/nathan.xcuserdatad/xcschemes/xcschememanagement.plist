@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ASBPlayerScrubbing.xcscheme</key>
+		<key>Pods-DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ASMediaFocusManager.xcscheme</key>
+		<key>Pods-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MWPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,22 +34,52 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VIPhotoView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-chichichi-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-chichichi-ASBPlayerScrubbing.xcscheme</key>
+		<key>Pods-chichichi-DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-chichichi-ASMediaFocusManager.xcscheme</key>
+		<key>Pods-chichichi-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichi-MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichi-MWPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-chichichi-Qiniu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichi-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichi-VIPhotoView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -54,17 +94,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-chichichiTests-ASBPlayerScrubbing.xcscheme</key>
+		<key>Pods-chichichiTests-DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-chichichiTests-ASMediaFocusManager.xcscheme</key>
+		<key>Pods-chichichiTests-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichiTests-MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichiTests-MWPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-chichichiTests-Qiniu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichiTests-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-chichichiTests-VIPhotoView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -82,77 +142,137 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>029308BAEA079E3C41C32059</key>
+		<key>07E7C0AA9C7962F4C92BCB96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0E34273CD621C9D0F72187B0</key>
+		<key>18A50AB563F4B3802A2F410F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>10405B68537E6172E09E1126</key>
+		<key>2749BDBCB8BB9A67C3114AEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FB06F3B537A1600F302033E</key>
+		<key>28E30BB4D29899F975EE6529</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4741D9275049EAC2576010B0</key>
+		<key>45CFCF118C98493A43D2DA5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EB55CFF67B8EB8177F5A275</key>
+		<key>560DE72443D559E99E9EE54F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93CE24D13977C5B2972E60FB</key>
+		<key>6014EAE296B7A248F672DF3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A90B1AD278CC9B09C8F0069</key>
+		<key>64D019AEC11A6AE3C71159E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5D7FFBB341F9722456F147B</key>
+		<key>6FEBEB40C9DC8D2D50C86A40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B40D9C9D270774967550C4E4</key>
+		<key>79590E8D577838E941D365A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C30DDC014F348232182A5CF2</key>
+		<key>7B5F56D37A0B1536A2F66454</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6E8FBD1B66BCA18CB5366EE</key>
+		<key>7F914F325C4D6A25CD2ED39A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6DEE5DBF3D55B3184B0EA81</key>
+		<key>88192D70527266946DEBC165</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FCF363C4591E02505C748422</key>
+		<key>9538984C3DB2741E4F4DC266</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FEED769E0E7F60A67A7A2F10</key>
+		<key>9540BD9A4F047FFE08196D6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F4C917B0988C2DBAB0E91EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A44CCE45479E40C499A86BC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACC3AA336775A8DB908BCF80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA84CA0E6739426628093BA1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE150C1AEB5AEB5E28631F50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8D7FB1486C7254DBBCC3B73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CAD704584E8C212B2B4CF2A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D11B479402BA9706E749F761</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCFAAA3CBCC50648025D673E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2F762C591A77883C3AAD48B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9E33D8E172C7A2B87F2B42B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC6AF3FF00E249D0C76B9101</key>
 		<dict>
 			<key>primary</key>
 			<true/>

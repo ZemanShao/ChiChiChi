@@ -59,6 +59,7 @@
 - (void)getShops{
     __weak ShopTableViewController *weakSelf = self;
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
     [manager GET:@"http://zeman.im/chichichi/getallshopsname.php"
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, NSDictionary *response) {

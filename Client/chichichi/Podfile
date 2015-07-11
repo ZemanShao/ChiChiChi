@@ -1,8 +1,9 @@
-# Uncomment this line to define a global platform for your project
+#Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
 pod "Qiniu", "~> 7.0"
-pod 'ASMediaFocusManager'
+pod "MWPhotoBrowser"
+pod 'VIPhotoView', '~> 0.1'
 target 'chichichi' do
 
 end

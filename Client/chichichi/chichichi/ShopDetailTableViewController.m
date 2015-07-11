@@ -9,9 +9,9 @@
 
 #import "ShopDetailTableViewController.h"
 #import "AFNetworking.h"
-#import "ASMediaFocusManager.h"
+#import "VIPhotoView.h"
 
-@interface ShopDetailTableViewController ()<ASMediasFocusDelegate>
+@interface ShopDetailTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *telLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -31,39 +31,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 2) {
-//        ASMediaFocusManager *mediaFocusManager = [[ASMediaFocusManager alloc] init];
-//        mediaFocusManager.delegate = self;
-//        [mediaFocusManager installOnView:self.imageView];
+        UIViewController *vc = [[UIViewController alloc]init];
+        
+        VIPhotoView *photoView = [[VIPhotoView alloc] initWithFrame:vc.view.frame andImage:self.currentShop.image];
+//        photoView.autoresizingMask = (1 << 6) -1;
+        [vc.view addSubview:photoView];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
-#pragma mark - ASMediaFocusDelegate
-
-- (UIViewController *)parentViewControllerForMediaFocusManager:(ASMediaFocusManager *)mediaFocusManager
-{
-    return self.parentViewController;
-}
-
-// Returns the URL where the media (image or video) is stored. The URL may be local (file://) or distant (http://).
-- (NSURL *)mediaFocusManager:(ASMediaFocusManager *)mediaFocusManager mediaURLForView:(UIView *)view
-{
-//    NSInteger index;
-//    NSString *name;
-//    NSURL *url;
-//    
-//    // Here, medias are accessed through their name stored in self.mediaNames
-//    index = [self.imageViews indexOfObject:view];
-//    name = self.mediaNames[index];
-//    url = [[NSBundle mainBundle] URLForResource:name withExtension:nil];
-
-    return [NSURL URLWithString:self.currentShop.imageUrl];
-}
-
-// Returns the title for this media view. Return nil if you don't want any title to appear.
-- (NSString *)mediaFocusManager:(ASMediaFocusManager *)mediaFocusManager titleForView:(UIView *)view
-{
-    return @"My title";
-}
 
 #pragma mark - Networking
 - (void)getShopDetail{
@@ -77,7 +53,8 @@
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
-         }];
+         }
+     ];
 }
 
 #pragma mark - Util
